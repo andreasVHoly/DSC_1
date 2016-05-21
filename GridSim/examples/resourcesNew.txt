@@ -1,0 +1,10 @@
+Res_0 136 3.6 router1 File5 File9 File7 File10 File1 File1 File5 File6 File7 File4 
+Res_1 201 4.0 router1 File3 
+Res_2 181 1.2 router2 File3 File6 File3 File4 File10 
+Res_3 138 0.1 router3 File9 File8 File7 File10 File4 
+Res_4 286 4.6 router2 File6 File6 File10 File10 File8 
+Res_5 165 9.1 router1 File7 File8 
+Res_6 223 9.5 router5 File2 File9 
+Res_7 259 7.3 router3 File7 File9 
+Res_8 288 8.7 router1 File7 
+Res_9 260 9.8 router1 File1 File7 File5 File2 File6 File5 File4 File4 

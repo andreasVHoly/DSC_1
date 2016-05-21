@@ -30,8 +30,8 @@ public class DataGridSim {
     public static void main(String[] args) {
         System.out.println("Starting data grid simulation ...");
 
-	//System.out.println("Using importer script");
-	//InputCreator icre =  new InputCreator(10,20);
+	System.out.println("Using importer script");
+	InputCreator icre =  new InputCreator(10,20);
 	
 
         try {

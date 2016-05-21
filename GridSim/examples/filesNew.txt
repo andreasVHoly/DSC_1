@@ -1,0 +1,10 @@
+file1 536
+file2 541
+file3 600
+file4 150
+file5 783
+file6 795
+file7 546
+file8 87
+file9 132
+file10 664
