@@ -1,10 +1,3 @@
-file1 437
-file2 539
-file3 817
-file4 681
-file5 827
-file6 397
-file7 393
-file8 988
-file9 54
-file10 958
+file1 1
+file2 1
+file3 1

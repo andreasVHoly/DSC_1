@@ -132,6 +132,9 @@ public class InputCreator {
             }
 			size = rn.nextInt(sizeMax);
 			blimit = rn.nextFloat()*10.0f;
+            if (blimit == 0){
+                blimit = 0.1f;
+            }
 			router = rn.nextInt(5)+1;
 			filamount = rn.nextInt(noFiles)+1;
 
@@ -150,7 +153,7 @@ public class InputCreator {
                 }
                 fileUsed[fileIndex] = true;
                 resourceAllocation.get(i).add(fileIndex);
-				bfr.write("File" + Integer.toString(fileIndex) + " ");
+				bfr.write("file" + Integer.toString(fileIndex) + " ");
 			}
 			bfr.write("\n");
 		}
@@ -182,7 +185,7 @@ public class InputCreator {
 	}
 
 	public static void main(String args[]){
-		InputCreator ip = new InputCreator(10,20);
+		InputCreator ip = new InputCreator(5,3);
 	}
 
 }

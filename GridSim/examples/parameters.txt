@@ -1,4 +1,4 @@
-numUsers=20
+numUsers=1
 files=filesNew.txt
 resources=resourcesNew.txt
 network=network.txt
