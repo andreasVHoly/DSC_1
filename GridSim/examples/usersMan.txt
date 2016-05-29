@@ -1,0 +1,2 @@
+user1 router2 Res_0 0.1 get testFile2 get testFile1 attribute testFile1 get fileF
+user2 router1 Res_1 0.1 get testFile1 replicate testFile1 Res_1 delete testFile1 Res_1
