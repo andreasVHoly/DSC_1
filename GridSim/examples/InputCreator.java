@@ -98,8 +98,10 @@ public class InputCreator {
     //checks if a file is in a resource & returns outcome
     private boolean checkForFile(int resource, int file){
         LinkedList<Integer> listoFiles = resourceAllocation.get(resource);
-        if (listoFiles.contains(file)){
-            return true;
+        for (int i = 0; i < listoFiles.size(); i++){
+            if (file == listoFiles.get(i)){
+                return true;
+            }
         }
         return false;
     }
@@ -133,17 +135,16 @@ public class InputCreator {
 				//attribute
 				case 1:
 					filamount = rn.nextInt(noFiles)+1;
+                    //can only get attribute of files in our allocated resource
+                    while(!checkForFile(res,filamount)){
+                        filamount = rn.nextInt(noFiles)+1;
+                    }
 					bfr.write(" attribute file" + Integer.toString(filamount));
 					break;
 				//replicate
 				case 2:
 					filamount = rn.nextInt(noFiles)+1;
 					resamount = rn.nextInt(noResources);
-                    //to not create duplicates and in order to replicate, file needs to exist in own resource
-                    while(!checkForFile(resamount,filamount) && checkForFile(res,filamount)){
-                        filamount = rn.nextInt(noFiles)+1;
-    					resamount = rn.nextInt(noResources);
-                    }
 					bfr.write(" replicate file" + Integer.toString(filamount) + " Res_" + Integer.toString(resamount));
 					break;
 				//delete
@@ -187,7 +188,7 @@ public class InputCreator {
 		int router, size, filamount, fileIndex;
 		//create no amount of resources with random attributes
 		for (int i = 0; i < no; i++){
-            //used for suplicate checks
+            //used for duplicate checks
             boolean[] fileUsed =  new boolean[noFiles+1];
             for (int l = 0; l < noFiles+1; l++){
                 fileUsed[l] = false;
