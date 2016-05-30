@@ -1,10 +1,10 @@
-Res_0 160 0.1 router2 file9 file4 
-Res_1 203 0.1 router4 file7 file10 file1 
-Res_2 277 0.1 router3 file9 file5 file10 file3 
-Res_3 267 0.1 router4 file8 file9 file5 
-Res_4 110 0.1 router1 file3 file4 file9 
-Res_5 232 0.1 router5 file10 file1 file4 file7 file3 
-Res_6 158 0.1 router3 file3 file4 
-Res_7 114 0.1 router2 file8 file5 file9 file4 
-Res_8 156 0.1 router4 file7 file6 file1 file3 file2 file9 
-Res_9 123 0.1 router2 file2 file5 
+Res_0 111 0.1 router3 file22 file8 file38 file41 file2 
+Res_1 124 0.1 router2 file36 file46 
+Res_2 221 0.1 router1 file25 file12 
+Res_3 107 0.1 router3 file42 file40 
+Res_4 251 0.1 router2 file20 file24 file16 
+Res_5 162 0.1 router5 file11 
+Res_6 255 0.1 router4 file23 file27 file48 file44 file6 
+Res_7 276 0.1 router1 file33 file39 file3 
+Res_8 111 0.1 router5 file47 file37 
+Res_9 149 0.1 router1 file4 file34 

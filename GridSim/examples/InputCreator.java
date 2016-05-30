@@ -29,7 +29,7 @@ public class InputCreator {
                 createParameters(true);
             }
             else{
-    			createFiles(10,1024);
+    			createFiles(50,1024);
     			createResources(resources,100,200);
     			createUsers(users);
                 createParameters(false);
@@ -187,16 +187,17 @@ public class InputCreator {
 		bfr = new BufferedWriter(new FileWriter("resourcesNew.txt"));
 		int router, size, filamount, fileIndex;
 		//create no amount of resources with random attributes
+        boolean[] fileUsed =  new boolean[noFiles+1];
+        for (int l = 0; l < noFiles+1; l++){
+            fileUsed[l] = false;
+        }
 		for (int i = 0; i < no; i++){
             //used for duplicate checks
-            boolean[] fileUsed =  new boolean[noFiles+1];
-            for (int l = 0; l < noFiles+1; l++){
-                fileUsed[l] = false;
-            }
+
             //random attributes
 			size = rn.nextInt(sizeMax);
 			router = rn.nextInt(5)+1;
-			filamount = rn.nextInt(noFiles)+1;
+			filamount = rn.nextInt(6)+1;
 
             LinkedList<Integer> temp = new LinkedList<Integer>();
             resourceAllocation.add(i,temp);
